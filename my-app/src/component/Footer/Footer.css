@@ -1,0 +1,64 @@
+body {
+    margin-bottom: 40px;
+}
+
+.sect {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.Sctt {
+    display: flex;
+    justify-content: center;
+}
+
+.inptBox {
+    background-color: rgba(70, 69, 69, 0.189);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 250px;
+}
+
+.inputContent {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.inptBox::placeholder {
+    text-align: left;
+    color: #b7b1b1;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.StartButton {
+    background-color: #e50914;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-left: 10px;
+}
+
+.StartButton:hover  {
+    background-color: #c2131b;
+}
+
+.StartButton:not(:hover) {
+    transition-delay: 0.2s;
+}
+
+.span-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    vertical-align: middle;
+}

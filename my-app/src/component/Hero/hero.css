@@ -1,0 +1,137 @@
+
+
+.Main {
+    background-image: url(../../Images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 100vh;
+}
+
+.hero {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 130px;
+}
+
+.header img {
+    height: 45px; /* Adjust if needed */
+}
+
+.header button {
+    color: #fff;
+    background-color: #e50914;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* transition: background-color 0.3s ease; */
+}
+
+.header button:hover {
+    background-color: #c2131b;
+}
+
+.header button:not(:hover) {
+    transition-delay: 0.2s;
+}
+
+.Text-center {
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.Text-center h1 {
+    font-size: 3.45rem;
+    margin: 0;
+}
+
+.Text-center h3 {
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.Text-center p  {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.Sctt {
+    display: flex;
+    justify-content: center;
+}
+
+.inptBox {
+    background-color: rgba(70, 69, 69, 0.189);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 250px;
+}
+
+.inputContent {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.inptBox::placeholder {
+    text-align: left;
+    color: #b7b1b1;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.StartButton {
+    background-color: #e50914;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-left: 10px;
+}
+
+.StartButton:hover  {
+    background-color: #c2131b;
+}
+
+.StartButton:not(:hover) {
+    transition-delay: 0.2s;
+}
+
+.span-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    vertical-align: middle;
+}
+
+.rainbow {
+    background-color: #000;
+    margin-bottom: 300px;
+}
+
+.rainbow-bar {
+  position: relative;
+  height: 10px; /* Thickness of the bar */
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  border-top-left-radius: 100% 40px;
+  border-top-right-radius: 100% 40px;
+  margin-top: -10px; /* To pull it up slightly into view */
+  z-index: 1;
+}
