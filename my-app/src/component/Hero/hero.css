@@ -1,12 +1,15 @@
-
+* {
+    padding: 0;
+    margin: 0;
+}
 
 .Main {
     background-image: url(../../Images/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     height: 100vh;
+    width: 100%;
 }
 
 .hero {
@@ -15,12 +18,11 @@
     justify-content: center;
 }
 
-.header {
+.header  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin: 0 130px;
+    padding: 20px 0;
 }
 
 .header img {
@@ -48,12 +50,13 @@
     text-align: center;
     justify-content: center;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .Text-center h1 {
     font-size: 3.45rem;
-    margin: 0;
+    font-weight: bolder;
+    margin-bottom: 15px;
 }
 
 .Text-center h3 {
@@ -64,6 +67,7 @@
 .Text-center p  {
     font-size: 16px;
     font-weight: normal;
+    margin-bottom: 20px;
 }
 
 .Sctt {
@@ -72,13 +76,15 @@
 }
 
 .inptBox {
-    background-color: rgba(70, 69, 69, 0.189);
+    background-color: rgba(70, 69, 69, 0.256);
     border: 1px solid grey;
     border-radius: 5px;
-    padding-top: 15px;
+    width: 30%;
+    padding: 20px;
+    /* padding-top: 15px;
+    padding-right: 160px;
     padding-bottom: 15px;
-    padding-left: 0;
-    padding-right: 250px;
+    padding-left: 250px; */
 }
 
 .inputContent {
@@ -126,12 +132,153 @@
     margin-bottom: 300px;
 }
 
+.slider-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.slider {
+  width: 1050px; /* 5 images * 210px each */
+  overflow: hidden;
+  /* border: 2px solid #ccc; */
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 200px;
+  height: 250px;
+  margin-right: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.slide:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.slider-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.slider-btn:hover {
+  background-color: #555;
+}
+
 .rainbow-bar {
   position: relative;
-  height: 10px; /* Thickness of the bar */
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-  border-top-left-radius: 100% 40px;
-  border-top-right-radius: 100% 40px;
-  margin-top: -10px; /* To pull it up slightly into view */
+  width: 100%;
+  height: 8px; 
+  background:linear-gradient(
+                    to right,
+                    rgba(33, 13, 22, 1) 16%,
+                    rgba(184, 40, 105, 1),
+                    rgba(229, 9, 20, 1),
+                    rgba(184, 40, 105, 1),
+                    rgba(33, 13, 22, 1) 84%
+                );
+  border-top-left-radius: 50% 100px;
+  border-top-right-radius: 50% 100px;
+  margin: 0; 
+  padding: 0;
   z-index: 1;
+  overflow: hidden;
+} 
+
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+    
+    .Main {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero {
+        overflow: hidden;
+    }
+
+    .header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 40px;
+        max-width: 100%;
+        margin: 0;
+        flex-wrap: nowrap;
+    }
+
+    .header img {
+        height: 28px;
+    }
+
+    .Text-center {
+        margin: 0;
+    }
+
+    .Text-center h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        padding: 0 40px 0 30px;
+        margin-bottom: 0px;
+    }
+    
+    .Text-center h3 {
+        font-weight: normal;
+        margin-bottom: 18px;
+        font-size: 16px;
+    }
+
+    .Text-center p  {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding: 0 15px 0 15px;
+        line-height: 1.35;
+    }
+    
+    .Text-center h1, h3, p {
+        margin: 20px;
+    }
+    
+    .Sctt {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px;
+        /* width: 100%; */
+    }
+
+    .inptBox {
+        background-color: rgba(70, 69, 69, 0.256);
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 80%;
+        padding: 15px;
+        margin: 0 20px 18px 20px;
+        /* margin-bottom: 18px; */
+    }
+    
+    .StartButton {
+        font-size: 18px;
+        padding: 13px 20px;
+        /* width: 65%; */
+        margin-bottom: 25px;
+    }
 }

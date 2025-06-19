@@ -6,11 +6,13 @@ function Hero() {
   return (
     <div className="Main">
         <div className="hero">
-            <header className="header">
-                <img src={Logo} alt="Backgound image" />
-                <button>Sign In</button>
-            </header>
-
+            <div className="container-main">
+                <header className="header ">
+                    <img src={Logo} alt="Backgound image" />
+                    <button>Sign In</button>
+                </header>
+            </div>
+    
             <div className="Text-center">
                 <h1>Unlimited movies, <br /> TV shows, and <br /> more</h1>
                 <h3>Starts at ₦2,500. Cancel anytime.</h3>
@@ -21,7 +23,7 @@ function Hero() {
                 <input type="email" name="email" placeholder="Email address" className="inptBox inputContent"/>
                 <button className="StartButton">Get Started <span className="span"><IoIosArrowForward /></span></button>
             </div>
-        </div>
+        </div>       
     </div>
     
   )

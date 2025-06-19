@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
         <Hero />
-        <Categories />
+        <Categories /> 
         <Experience />
         <Faqs />
         <Footer />

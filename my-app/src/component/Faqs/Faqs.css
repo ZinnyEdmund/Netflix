@@ -5,13 +5,13 @@ body {
 }
 
 .faq-container {
-  width: 80%;
-  margin: 0 auto;
-  font-family: sans-serif;
+    width: 75%;
+    margin: 0 auto;
+    font-family: sans-serif;
 }
 
 .faq-item {
-  padding: 4px 0;
+    padding: 4px 0;
 }
 
 .faq-question {
@@ -25,7 +25,7 @@ body {
 }
 
 .faq-question:hover {
-   background-color: #3c3939;
+    background-color: #3c3939;
 }
 
 .faq-question:not(:hover) {
@@ -44,6 +44,7 @@ body {
 }
 
 .faq-answer {
+    white-space: pre-line;
     color: #fff;
     background-color: #312e2e;
     font-size: 24px;

@@ -15,7 +15,7 @@
     font-weight: 500;
     font-size: 25px;
     margin-bottom: 30px;  
-    padding-left: 26px;
+    padding-left: 125px;
 }
 
 .container_content {
@@ -29,8 +29,9 @@
   color: #ffffff;
   background: linear-gradient(to bottom right, #060623bf, #8d0b8d33);
   border-radius: 16px;
-  padding: 20px;
-  max-width: 250px;
+  padding: 20px 15px;
+  max-width: 220px;
+  height: 35vh;
   width: 100%;
 }
 
@@ -42,8 +43,12 @@
 
 .container_texts p {
     color: #ecececac;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.02;
+    line-height: 1.22;
 } 
 
+.faq-container h2 {
+    font-weight: normal;
+    font-size: 26px;
+}
