@@ -1,8 +1,9 @@
-import './Experience.css'
+import './Experience.css';
 
 function Experience() {
   return (
     <div className='container'>
+      
         <div className='container_header'>
           <h2>More Reasons to Join</h2>
         </div>
@@ -11,10 +12,11 @@ function Experience() {
           <div className='container_texts'>
             <h4>Enjoy on your TV</h4>
             <p>Watch on Smart TVs, <br /> Playstation, Xbox, <br /> Chromecast, Apple TV, Blu- <br />ray players, and more.</p>
+            <img src='screen.svg' alt="screen" />
           </div>
 
           <div className='container_texts'>
-            <h4>Download your <br /> shows to watch <br /> offline</h4>
+            <h4>Download your shows to watch  offline</h4>
             <p>Save your favorites easily and <br /> always have something to <br /> watch.</p>
           </div>
 
@@ -24,7 +26,7 @@ function Experience() {
           </div>
 
           <div className='container_texts'>
-            <h4>Create profiles for <br /> kids</h4>
+            <h4>Create profiles for kids</h4>
             <p>Send kids on adventures with <br /> their favorite characters in a <br /> space made just for them — <br /> free with your membership.</p>
           </div>
         </div>

@@ -7,6 +7,7 @@
     color: white;
     justify-content: center;
     align-items: center;
+    /* width: 100%; */
     margin: 30px;
     padding: 40px 20px;
 }
@@ -15,7 +16,7 @@
     font-weight: 500;
     font-size: 25px;
     margin-bottom: 30px;  
-    padding-left: 125px;
+    padding-left: 120px;
 }
 
 .container_content {
@@ -26,13 +27,12 @@
 }
 
 .container_texts {
-  color: #ffffff;
-  background: linear-gradient(to bottom right, #060623bf, #8d0b8d33);
-  border-radius: 16px;
-  padding: 20px 15px;
-  max-width: 220px;
-  height: 35vh;
-  width: 100%;
+    color: #ffffff;
+    background: linear-gradient(to bottom right, #060623bf, #8d0b8d33);
+    border-radius: 16px;
+    padding: 20px 15px 80px 15px;
+    max-width: 220px;
+    width: 100%;
 }
 
 .container_texts h4 {
@@ -51,4 +51,43 @@
 .faq-container h2 {
     font-weight: normal;
     font-size: 26px;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+
+    .container {
+        padding: 0;
+        margin-bottom: 100px;
+    }
+
+    .container_content {
+        max-width: 500px;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .container_header h2 {
+        padding: 0;
+    }
+
+    .container_texts {
+        padding: 20px ;
+        /* max-width: 220px; */
+    }
+
+    .container_texts p {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .container_texts h4 {
+        font-weight: normal;
+        font-size: 20px;
+        margin: 0 0 10px 0;
+    }
 }

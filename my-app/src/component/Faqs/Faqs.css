@@ -56,3 +56,32 @@ body {
     padding: 10px 20px;
     line-height: 1.45;
 }
+
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+
+    .faq-container {
+        width: 90%;
+    }
+
+    .faq-container h2 {
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .faq-question h3 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .faq-answer {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .Spaniie {
+        size: 20px;
+    }
+}

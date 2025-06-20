@@ -44,7 +44,7 @@ const FAQItem = ({ question, answer }: {question: string; answer: string}) => {
     <div className="faq-item"> {/* Container for each FAQ item */}
       <div className="faq-question" onClick={toggleAnswer}> {/* Question section clickable to toggle the answer */}
         <h3>{question}</h3> {/* Render the question text */}
-        <span>{isOpen ? <LiaTimesSolid size={35}/> : <BsPlusLg size={35} />}</span> {/* Show '-' if open, '+' if closed */}
+        <span className='Spaniie'>{isOpen ? <LiaTimesSolid size={35}/> : <BsPlusLg size={35} />}</span> {/* Show '-' if open, '+' if closed */}
       </div>
       {isOpen && <p className="faq-answer">{answer}</p>} {/* Conditionally render the answer if isOpen is true */}
     </div>
