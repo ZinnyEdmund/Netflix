@@ -3,7 +3,8 @@ import './Experience.css';
 function Experience() {
   return (
     <div className='container'>
-      
+      <div className='reenah'>
+        
         <div className='container_header'>
           <h2>More Reasons to Join</h2>
         </div>
@@ -30,6 +31,7 @@ function Experience() {
             <p>Send kids on adventures with <br /> their favorite characters in a <br /> space made just for them — <br /> free with your membership.</p>
           </div>
         </div>
+      </div>
     </div>
   )
 }

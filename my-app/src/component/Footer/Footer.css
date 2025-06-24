@@ -14,19 +14,25 @@ body {
     display: flex;
 }
 
+.watchiee {
+    margin-bottom: 20px;
+}
+
 .Sctt {
     display: flex;
     justify-content: center;
 }
 
 .inptBox {
-    background-color: rgba(70, 69, 69, 0.189);
+    background-color: rgba(70, 69, 69, 0.256);
     border: 1px solid grey;
     border-radius: 5px;
-    padding-top: 15px;
+    width: 350px;
+    padding: 20px;
+    /* padding-top: 15px;
+    padding-right: 160px;
     padding-bottom: 15px;
-    padding-left: 0;
-    padding-right: 250px;
+    padding-left: 250px; */
 }
 
 .inputContent {
@@ -39,7 +45,7 @@ body {
 .inptBox::placeholder {
     text-align: left;
     color: #b7b1b1;
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: 17px;
     font-weight: 300;
 }
@@ -62,8 +68,7 @@ body {
     transition-delay: 0.2s;
 }
 
-.span-icons {
-    display: flex;
+.span {
     justify-content: center;
     align-items: center; 
     vertical-align: middle;
@@ -122,8 +127,83 @@ body {
     font-size: 13px;
     font-weight: normal;
     color: #b7b1b1;
+  
 }
 
 .p2 a {
-    color: #569ab5;
+    color: #4773d2;
+}
+
+.Lastie {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.123);
+    font-size:18px;
+    font-weight: normal;
+    padding: 6px 25px;  
+    border-radius: 2px;
+    border: #d1d1d149 1px solid;
+}    
+
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+    .content {
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }
+
+    .Sctt {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        margin-left: 0 ;
+        /* justify-content: center; */
+    }
+
+    .lite {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+        /* display: flex; */
+    }
+
+    .footer-column {
+        margin-bottom: 0;
+    }
+
+    .p1, .p2 {
+        text-align: left;
+    }
+
+    .inptBox {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 3px;
+    }
+
+    .StartButton {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .footing {
+        margin: 10px;
+    }
+
+    .Lastie {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.123);
+        font-size:18px;
+        font-weight: normal;
+        margin-left: 22px; 
+        padding: 10px 25px;  
+        border-radius: 5px;
+        border: #d1d1d149 1px solid;
+    }    
 }

@@ -122,8 +122,7 @@
     transition-delay: 0.2s;
 }
 
-.span-icons {
-    display: flex;
+.span {
     justify-content: center;
     align-items: center; 
     vertical-align: middle;
@@ -132,51 +131,6 @@
 .rainbow {
     background-color: #000;
     margin-bottom: 300px;
-}
-
-.slider-container {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin: 20px auto;
-}
-
-.slider {
-  width: 1050px; /* 5 images * 210px each */
-  overflow: hidden;
-  /* border: 2px solid #ccc; */
-}
-
-.slide-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  width: 200px;
-  height: 250px;
-  margin-right: 50px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  border-radius: 10px;
-}
-
-.slide:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-.slider-btn {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.slider-btn:hover {
-  background-color: #555;
 }
 
 .rainbow-bar {

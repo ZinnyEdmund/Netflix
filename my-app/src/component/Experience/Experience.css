@@ -62,20 +62,31 @@
         margin-bottom: 100px;
     }
 
+    .reenah {
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+
     .container_content {
-        max-width: 500px;
+        max-width: 700px;
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
     }
 
     .container_header h2 {
-        padding: 0;
+        padding-left: 10px;
+        font-size: 18px;
+        font-weight: normal;
+        margin-bottom: 15px;
     }
 
     .container_texts {
-        padding: 20px ;
-        /* max-width: 220px; */
+        width: 90%; /* Take 90% of screen width */
+        max-width: 300px; /* But not more than 300px per box */
+        /* padding: 16px; */
+        margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .container_texts p {

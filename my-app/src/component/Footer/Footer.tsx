@@ -1,6 +1,4 @@
 import { IoIosArrowForward } from "react-icons/io";
-// import { IoLanguage } from "react-icons/io5";
-// import { MdArrowDropDown } from "react-icons/md";
 import './Footer.css'
 
 
@@ -8,7 +6,7 @@ function Footer() {
   return (
     <div className="content">
         <div className="sect">
-          <p>Ready to watch? Enter your email to create or restart your membership.</p>
+          <p className="watchiee">Ready to watch? Enter your email to create or restart your membership.</p>
         </div>
         <div className="Sctt">
           <input type="email" name="email" placeholder="Email address" className="inptBox inputContent"/>
@@ -58,11 +56,11 @@ function Footer() {
         </div>
 
         <div className="footing">
-            <select name="colors" id="colors">
-              <option value="red">English </option>
+            <select name="colors" id="colors" className="Lastie">
+              <option value="red" >English </option>
             </select>
             <p className="p1">Netflix Nigeria</p>
-            <p className="p2">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn More</a></p>
+            <p className="p2">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn More.</a></p>
         </div>
     </div>
   )
