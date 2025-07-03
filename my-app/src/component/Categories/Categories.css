@@ -86,3 +86,21 @@ body {
   z-index: 1;
   overflow: hidden;
 } */
+
+
+/* Responsiveness */
+@media screen and (max-width: 76px) {
+  
+  .trending-header {
+    padding-left: 10px;
+  }
+
+  .trending-header h1{
+    text-align: left;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+}

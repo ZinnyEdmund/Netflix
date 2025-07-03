@@ -19,7 +19,7 @@ const Categories = () => {
   const [position, setPosition] = useState(0);
   const visibleSlides = 5;
   const slideWidth = 185; // Margin
-  const images = [Squid, Straw, untildawn, ginny, territorial, lovestory, havoc, sandman, stranger, kraven, wednesday, ];
+  const images = [Squid, Straw, untildawn, ginny, territorial, lovestory, havoc, sandman, stranger, kraven, wednesday];
   // Calculate the maximum position based on the number of images and visible slides
   // If there are fewer images than visible slides, maxPosition will be 0
   const maxPosition = images.length - visibleSlides;
@@ -39,9 +39,12 @@ const Categories = () => {
         <h1>Trending Now</h1>
       </div>
       <div className="slider-container">
-        <button className="slider-btn left" onClick={() => moveSlide(-2)}>
-          <MdArrowBackIos color='white' size={20} />
-        </button>
+        {position > 0 && (
+          <button className="slider-btn left" onClick={() => moveSlide(-2)}>
+            <MdArrowBackIos color='white' size={20} />
+          </button>
+        )}
+
 
         <div className="slider">
           <div
@@ -54,9 +57,11 @@ const Categories = () => {
           </div>
         </div>
 
-        <button className="slider-btn right" onClick={() => moveSlide(2)}>
-          <MdArrowForwardIos color='white' size={20} />
-        </button>
+        {position < maxPosition && (
+          <button className="slider-btn right" onClick={() => moveSlide(2)}>
+            <MdArrowForwardIos color='white' size={20} />
+          </button>
+        )}
       </div>
     </section>
   );

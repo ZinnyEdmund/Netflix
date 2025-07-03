@@ -14,7 +14,9 @@ function Hero() {
             </div>
     
             <div className="Text-center">
-                <h1>Unlimited movies, <br /> TV shows, and <br /> more</h1>
+                <div className="myie">
+                     <h1>Unlimited movies, TV shows, and more</h1>
+                </div>
                 <h3>Starts at ₦2,500. Cancel anytime.</h3>
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
             </div>

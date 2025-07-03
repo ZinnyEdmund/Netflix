@@ -53,6 +53,13 @@
     justify-content: center;
     color: #fff;
     margin-top: 80px;
+    width: 100%;
+}
+
+.myie {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .Text-center h1 {
@@ -236,5 +243,29 @@
         padding: 13px 20px;
         /* width: 65%; */
         /* margin-bottom: 25px; */
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .Text-center {
+        text-align: center;
+        width: 100%;
+    }
+
+    .myie {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Text-center {
+        text-align: center;
+        width: 100%;
+    }
+
+    .myie {
+        width: 100%;
+        margin: 0;
     }
 }
