@@ -1,11 +1,16 @@
 import React from "react";
-import Home from './Pages/home'
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home'
+import Sign from './SignUppage/Sign'
 
 
 const App: React.FC = () => {
 
   return (
-    <Home />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Sign />} />
+    </Routes>
   )
 }
 
