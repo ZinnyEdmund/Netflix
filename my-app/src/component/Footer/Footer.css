@@ -1,209 +1,212 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .content {
-    margin-top: 80px;
-    margin-bottom: 150px;
+  margin-top: 80px;
+  margin-bottom: 150px;
 }
 
 .sect {
-    justify-content: center;
-    text-align: center;
-    display: flex;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 .watchiee {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .Sctt {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .inptBox {
-    background-color: rgba(70, 69, 69, 0.256);
-    border: 1px solid grey;
-    border-radius: 5px;
-    width: 350px;
-    padding: 20px;
-    /* padding-top: 15px;
+  background-color: rgba(70, 69, 69, 0.256);
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 350px;
+  padding: 20px;
+  /* padding-top: 15px;
     padding-right: 160px;
     padding-bottom: 15px;
     padding-left: 250px; */
 }
 
 .inputContent {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    padding-left: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 15px;
 }
 
 .inptBox::placeholder {
-    text-align: left;
-    color: #b7b1b1;
-    padding-left: 15px;
-    font-size: 17px;
-    font-weight: 300;
+  text-align: left;
+  color: #b7b1b1;
+  padding-left: 15px;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 .StartButton {
-    background-color: #e50914;
-    color: #fff;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 30px;
-    margin-left: 10px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin-left: 10px;
 }
 
-.StartButton:hover  {
-    background-color: #c2131b;
+.StartButton:hover {
+  background-color: #c2131b;
 }
 
 .StartButton:not(:hover) {
-    transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .span {
-    justify-content: center;
-    align-items: center; 
-    vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .container {
-    margin: 0 auto;
-    justify-content: center;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .lite {
-    margin-left: 140px;
-    margin-bottom: 0;
+  margin-left: 140px;
+  margin-bottom: 0;
 }
 
 .footer {
-    justify-content: space-evenly;
-    display: flex;
-    align-items: center; 
-    padding: 20px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 .footer-column {
-    padding: 20px;
+  padding: 20px;
 }
 
-.footer-column ul, li, a {
-    text-decoration: underline;
-    list-style: none;
-    color: #b6b4b4;
-    font-size: 14px;
+.footer-column ul,
+li,
+a {
+  text-decoration: underline;
+  list-style: none;
+  color: #b6b4b4;
+  font-size: 14px;
 }
 
 .footer-column ul li {
   margin-bottom: 12px;
 }
 
-.footer-column ul, li, a:active{
-    color: red;
+.footer-column ul,
+li,
+a:active {
+  color: red;
 }
 
 .footing {
-    margin: 20px 190px;
-    display: block;
-    justify-content: center;
+  margin: 20px 190px;
+  display: block;
+  justify-content: center;
 }
 
 .p1 {
-    font-size: 14px;
-    font-weight: normal;
-    color: #b7b1b1;
-    padding: 10px 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b7b1b1;
+  padding: 10px 0;
 }
 
 .p2 {
-    font-size: 13px;
-    font-weight: normal;
-    color: #b7b1b1;
-  
+  font-size: 13px;
+  font-weight: normal;
+  color: #b7b1b1;
 }
 
 .p2 a {
-    color: #4773d2;
+  color: #4773d2;
 }
 
 .Lastie {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.123);
-    font-size:18px;
-    font-weight: normal;
-    padding: 6px 25px;  
-    border-radius: 2px;
-    border: #d1d1d149 1px solid;
-}    
-
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.123);
+  font-size: 18px;
+  font-weight: normal;
+  padding: 6px 25px;
+  border-radius: 2px;
+  border: #d1d1d149 1px solid;
+}
 
 /* Responsiveness */
 @media screen and (max-width: 767px) {
-    .content {
-        margin-top: 60px;
-        margin-bottom: 100px;
-    }
+  .content {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
 
-    .Sctt {
-        align-items: center;
-        justify-content: center;
-    }
+  .Sctt {
+    align-items: center;
+    justify-content: center;
+  }
 
-    .container {
-        margin-left: 0 ;
-        /* justify-content: center; */
-    }
+  .container {
+    margin-left: 0;
+    /* justify-content: center; */
+  }
 
-    .lite {
-        margin-left: 40px;
-        margin-bottom: 20px;
-    }
+  .lite {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
 
-    .footer{
-        flex-direction: column;
-        align-items: flex-start;
-        /* display: flex; */
-    }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    /* display: flex; */
+  }
 
-    .footer-column {
-        margin-bottom: 0;
-    }
+  .footer-column {
+    margin-bottom: 0;
+  }
 
-    .p1, .p2 {
-        text-align: left;
-    }
+  .p1,
+  .p2 {
+    text-align: left;
+  }
 
-    .inptBox {
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 3px;
-    }
+  .inptBox {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 3px;
+  }
 
-    .StartButton {
-        width: 90%;
-        margin-top: 5px;
-    }
+  .StartButton {
+    width: 90%;
+    margin-top: 5px;
+  }
 
-    .footing {
-        margin: 10px;
-    }
+  .footing {
+    margin: 10px;
+  }
 
-    .Lastie {
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.123);
-        font-size:18px;
-        font-weight: normal;
-        margin-left: 22px; 
-        padding: 10px 25px;  
-        border-radius: 5px;
-        border: #d1d1d149 1px solid;
-    }    
+  .Lastie {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.123);
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 22px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: #d1d1d149 1px solid;
+  }
 }

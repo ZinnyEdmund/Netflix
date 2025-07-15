@@ -5,8 +5,8 @@ import Logo from "../../Images/Logo.png";
 
 const Hero = () => {
   const navigate = useNavigate();
-  const handleSignUp = () => {
-    navigate("/Signup");
+  const handleSignIn = () => {
+    navigate("/Signin");
   };
 
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="container-main">
           <header className="header ">
             <img src={Logo} alt="Backgound image" />
-            <button onClick={handleSignUp}>Sign In</button>
+            <button onClick={handleSignIn}>Sign In</button>
           </header>
         </div>
 
