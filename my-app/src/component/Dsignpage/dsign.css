@@ -1,0 +1,202 @@
+.dsign-container {
+  background-image: url(../../Images/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 135vh;
+  padding: 0;
+  margin: 0;
+}
+
+.dsign-image {
+  /* width: 100%; */
+  padding: 2rem;
+  margin: 0 40px;
+}
+
+.dsign-image img {
+  height: 45px;
+  padding: 0 5rem;
+}
+
+/* .DSIGNER-SECTION {
+
+} */
+
+.dsign-content {
+  background-color: #000000b9;
+  box-sizing: border-box;
+  display: inherit;
+  height: 110vh;
+  width: 36%;
+  padding: 50px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.dsign-content h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.Forms input,
+.Second_input input {
+  background-color: rgba(40, 40, 40, 0.338);
+  border: 1px solid #a4a4a491;
+  border-radius: 5px;
+  padding: 20px;
+  width: 90%;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.Forms input {
+  margin-bottom: 20px;
+}
+
+.Forms input::placeholder {
+  color: #dadada;
+  font-size: 16px;
+}
+
+.Second_input input::placeholder {
+  color: #dadada;
+  font-size: 16px;
+}
+
+.signin {
+  background-color: #e50914;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.signin:hover {
+  background-color: #c2131b;
+}
+
+.Forms p {
+  text-align: center;
+  color: #bcbcbcad;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Sigin_code {
+  background-color: rgba(128, 128, 128, 0.4);
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.Sigin_code:hover {
+  background-color: #80808044;
+  transition: ease-in 0.25s;
+}
+
+.forgotten_password {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.forgotten_password a {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+}
+
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+  /* hide the native checkbox */
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #888;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+}
+
+.Form_p1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.Form_p1 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px
+}
+
+.Form_p2 {
+  font-size: small;
+  color: #888;
+  margin-bottom: 10px
+}
+
+.showmore {
+  color: #448df4d9;
+  font-size: small;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.showmore1 {
+  color: #448df4d9;
+  font-size: small;
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.showmore_p {
+  font-size: small;
+  color: #888;
+}

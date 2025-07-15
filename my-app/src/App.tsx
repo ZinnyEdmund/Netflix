@@ -1,17 +1,16 @@
-import React from "react";
-import { Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home'
-import Sign from './SignUppage/Sign'
-
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./Pages/Home";
+import Signup from "./signuppage/Signup";
 
 const App: React.FC = () => {
-
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/" element={<Sign />} />
-    </Routes>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Signup" element={<Signup />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

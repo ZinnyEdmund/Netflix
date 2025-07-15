@@ -6,7 +6,7 @@ import Logo from "../../Images/Logo.png";
 const Hero = () => {
   const navigate = useNavigate();
   const handleSignUp = () => {
-    navigate("/Sign");
+    navigate("/Signup");
   };
 
   return (
