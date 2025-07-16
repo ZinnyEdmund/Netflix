@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { LiaTimesSolid } from "react-icons/lia";
 import "./Categories.css";
 
 // Images
-import Squid from "../../Images/Squid.jpg";
-import Straw from "../../Images/Straw.jpg";
-import untildawn from "../../Images/untildawn.webp";
-import ginny from "../../Images/ginny.webp";
+import squidgame1 from "../../Images/squidgame1.webp";
+import straw1 from "../../Images/straw1.jpg";
+import untildawn3 from "../../Images/untildawn3.jpg";
+import ginny1 from "../../Images/ginny1.jpg";
 import territorial from "../../Images/territorial.jpg";
-import lovestory from "../../Images/lovestory.jpg";
-import havoc from "../../Images/havoc.jpg";
+import madea from "../../Images/madea.jpg";
+import havoc1 from "../../Images/havoc1.webp";
 import sandman from "../../Images/sandman.jpg";
 import stranger from "../../Images/stranger.jpg";
 import kraven from "../../Images/kraven.jpg";
@@ -31,7 +32,7 @@ const Categories = () => {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
   const visibleSlides = 5;
-  const slideWidth = 185; // px
+  const slideWidth = 175; // px
 
   const movieList: Movie[] = [
     {
@@ -43,7 +44,7 @@ const Categories = () => {
       genres: "Survival drama",
       description:
         "Hundreds of cash-strapped players accept a strange invitation to compete in deadly children’s games for a massive prize, but only one can survive.",
-      img: Squid,
+      img: squidgame1,
     },
     {
       id: 2,
@@ -54,7 +55,7 @@ const Categories = () => {
       genres: "Drama",
       description:
         "A struggling single Black mother’s day spirals out of control, forcing impossible choices as she fights to protect her ill daughter.",
-      img: Straw,
+      img: straw1,
     },
     {
       id: 3,
@@ -64,7 +65,7 @@ const Categories = () => {
       type: "TV Series",
       genres: "Horror",
       description: "Hundreds risk lives for survival and a massive prize.",
-      img: untildawn,
+      img: untildawn3,
     },
     {
       id: 4,
@@ -75,7 +76,7 @@ const Categories = () => {
       genres: "Drama",
       description:
         "A university crew revisits a cursed mountain cabin, confronting death, and themselves, when they come back to life.",
-      img: ginny,
+      img: ginny1,
     },
     {
       id: 5,
@@ -97,7 +98,7 @@ const Categories = () => {
       genres: "Drama",
       description:
         "A director explores modern relationships through the eyes of 2000s-born friends running a wedding business.",
-      img: lovestory,
+      img: madea,
     },
     {
       id: 7,
@@ -108,7 +109,7 @@ const Categories = () => {
       genres: "Action",
       description:
         "Detective Walker dives into a criminal underworld to rescue a politician’s son after a drug deal collapses.",
-      img: havoc,
+      img: havoc1,
     },
     {
       id: 8,
@@ -166,7 +167,7 @@ const Categories = () => {
   };
 
   return (
-    <section>
+    <section className="category_section"> 
       <div className="trending-header">
         <h1>Trending Now</h1>
       </div>
@@ -182,7 +183,7 @@ const Categories = () => {
             <p>{selectedMovie.genres}</p>
           </div>
           <p>{selectedMovie.description}</p>
-          <button onClick={() => setSelectedMovie(null)}>Close</button>
+          <button onClick={() => setSelectedMovie(null)}><span><LiaTimesSolid size={25} /> </span></button>
         </div>
       ) : (
         <div className="slider-container">
