@@ -11,30 +11,33 @@ const Dsignup = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
-const handleSignUp = async (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSignUp = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-  // Basic check
-  if (password !== confirmPassword) {
-    alert("Passwords do not match");
-    return;
-  }
-
-  try {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    console.log("User created:", userCredential.user);
-    navigate("/dashboard"); // you'll build this later
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      alert(error.message);
-    } else {
-      alert("An unknown error occurred");
+    // Basic check
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
     }
-  }
-};
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log("User created:", userCredential.user);
+      navigate("/dashboard"); // you'll build this later
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        alert(error.message);
+      } else {
+        alert("An unknown error occurred");
+      }
+    }
+  };
 
   return (
     <div className="dsignup-container">
@@ -50,7 +53,7 @@ const handleSignUp = async (e: React.FormEvent) => {
               type="text"
               placeholder="Username"
               value={username}
-  onChange={(e) => setUsername(e.target.value)}
+              onChange={(e) => setUsername(e.target.value)}
               autoComplete="off"
               className="inputContent1"
             />
@@ -60,7 +63,7 @@ const handleSignUp = async (e: React.FormEvent) => {
                 type="email"
                 placeholder="Email Address"
                 value={email}
-  onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 autoComplete="off"
                 className="inputContent2"
               />
