@@ -1,5 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
+import Signin from "./signuppage/Signin";
 import Signup from "./signuppage/Signup";
 
 const App: React.FC = () => {
@@ -7,8 +8,9 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Signin" element={<Signup />} />
-        <Route path="/Signup" element={<Home />} />
+        <Route path="/Signin" element={<Signin />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

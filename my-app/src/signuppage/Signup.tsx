@@ -1,14 +1,13 @@
-import Dsign from "../component/Dsignpage/Dsign"
-import Footer from "../component/Footer/Footer"
+import Dsignup from '../component/Dsignuppage/Dsignup'
+// import Footer from '../component/Footer/Footer'
 
-
-function Sign() {
+function Signup() {
   return (
     <div>
-      <Dsign />
-      <Footer />
+        <Dsignup />
+        {/* <Footer /> */}
     </div>
-  );
+  )
 }
 
-export default Sign
+export default Signup

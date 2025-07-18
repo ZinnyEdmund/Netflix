@@ -126,7 +126,7 @@ body {
 .movie-details div p {
   background-color: #333;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 0.8rem;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 /* CTA Button */
-.movie-details button {
+.Movie_button {
   position: absolute;
   top: 10px; /* how far from top */
   right: 10px; /* push to the right */
@@ -152,9 +152,24 @@ body {
   transition: background 0.3s ease;
 }
 
-.movie-details button:hover {
+.Movie_button:hover {
   background-color: #f2f2f222;
   border-radius: 10px;
+}
+
+.Movie_Button1 {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.Movie_Button1:hover {
+    background-color: #c2131b;
 }
 
 /* Close Button (X) */

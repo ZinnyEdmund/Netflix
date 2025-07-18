@@ -8,6 +8,9 @@ const Hero = () => {
   const handleSignIn = () => {
     navigate("/Signin");
   };
+  const handleSignUp = () => {
+    navigate("/Signup");
+  };
 
   return (
     <div className="Main">
@@ -38,7 +41,7 @@ const Hero = () => {
             className="inptBox inputContent"
             required
           />
-          <button className="StartButton">
+          <button className="StartButton" onClick={handleSignUp}>
             Get Started{" "}
             <span className="span">
               <IoIosArrowForward />

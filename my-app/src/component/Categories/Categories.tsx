@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { LiaTimesSolid } from "react-icons/lia";
+import { IoIosArrowForward } from "react-icons/io";
 import "./Categories.css";
 
 // Images
@@ -30,7 +31,6 @@ type Movie = {
 const Categories = () => {
   const [position, setPosition] = useState(0);
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
-
   const visibleSlides = 5;
   const slideWidth = 175; // px
 
@@ -167,7 +167,7 @@ const Categories = () => {
   };
 
   return (
-    <section className="category_section"> 
+    <section className="category_section">
       <div className="trending-header">
         <h1>Trending Now</h1>
       </div>
@@ -183,7 +183,17 @@ const Categories = () => {
             <p>{selectedMovie.genres}</p>
           </div>
           <p>{selectedMovie.description}</p>
-          <button onClick={() => setSelectedMovie(null)}><span><LiaTimesSolid size={25} /> </span></button>
+          <button className="Movie_Button1">
+            Get Started{" "}
+            <span className="span">
+              <IoIosArrowForward />
+            </span>
+          </button>
+          <button onClick={() => setSelectedMovie(null)} className="Movie_button">
+            <span>
+              <LiaTimesSolid size={25} />{" "}
+            </span>
+          </button>
         </div>
       ) : (
         <div className="slider-container">
@@ -222,4 +232,3 @@ const Categories = () => {
 };
 
 export default Categories;
- 
