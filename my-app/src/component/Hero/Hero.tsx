@@ -1,14 +1,32 @@
-import { IoIosArrowForward } from "react-icons/io";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
 import "./hero.css";
 import Logo from "../../Images/Logo.png";
 
 const Hero = () => {
+  const [email, setEmail] = useState("");
   const navigate = useNavigate();
+
   const handleSignIn = () => {
     navigate("/Signin");
   };
   const handleSignUp = () => {
+    if (!email.trim()) {
+      alert("Email is required!");
+      return;
+    }
+
+    const isValidEmail = (email: string) => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+
+    if (!isValidEmail(email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
     navigate("/Signup");
   };
 
@@ -37,6 +55,8 @@ const Hero = () => {
           <input
             type="email"
             name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Email address"
             className="inptBox inputContent"
             required

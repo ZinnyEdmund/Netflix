@@ -1,12 +1,12 @@
 import Dsign from "../component/Dsigninpage/Dsign"
-import Footer from "../component/Footer/Footer"
+// import Footer from "../component/Footer/Footer"
 
 
 function Sign() {
   return (
     <div>
       <Dsign />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
