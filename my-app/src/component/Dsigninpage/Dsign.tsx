@@ -1,9 +1,9 @@
 import Logo from "../../Images/Logo.png";
 import "./dsign.css";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { auth } from "../../firebaseConfig";
+import app from "../../firebaseConfig";
 
 
 const Dsign: React.FC = () => {
@@ -40,6 +40,7 @@ const Dsign: React.FC = () => {
   }
 
   try {
+    const auth = getAuth(app);
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     console.log("AUTH:", auth); // ← place this before signInWithEmailAndPassword
 

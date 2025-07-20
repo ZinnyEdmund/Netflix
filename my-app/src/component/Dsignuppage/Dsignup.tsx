@@ -1,7 +1,7 @@
 import "./Dsignup.css";
 import { useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebaseConfig"; // adjust if needed
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import auth from "../../firebaseConfig"; // adjust if needed
 import { useNavigate } from "react-router-dom";
 import Logo from "../../Images/Logo.png";
 
@@ -23,8 +23,9 @@ const Dsignup = () => {
     }
 
     try {
+      const Auth = getAuth(auth);
       const userCredential = await createUserWithEmailAndPassword(
-        auth,
+        Auth,
         email,
         password
       );
