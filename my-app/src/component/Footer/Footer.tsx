@@ -1,7 +1,31 @@
 import { IoIosArrowForward } from "react-icons/io";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Footer.css";
 
-function Footer() {
+const Footer = () =>  {
+
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+
+  const handleSignUp = () => {
+    if (!email.trim()) {
+      alert("Email is required!");
+      return;
+    }
+     const isValidEmail = (email: string) => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    };
+
+    if (!isValidEmail(email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    navigate("/Signup");
+  };
+
   return (
     <div className="content">
       <div className="sect">
@@ -13,10 +37,12 @@ function Footer() {
         <input
           type="email"
           name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="Email address"
           className="inptBox inputContent"
         />
-        <button className="StartButton">
+        <button className="StartButton" onClick={handleSignUp}>
           Get Started{" "}
           <span className="span">
             <IoIosArrowForward />
