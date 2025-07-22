@@ -1,0 +1,123 @@
+/* Sidebar.css */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #000000;
+}
+
+.my_logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #131720;
+}
+
+.dot {
+  color: red;
+}
+
+.menu {
+  flex: 1;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  transition: all 0.2s ease;
+}
+
+.menu li {
+  display: flex;
+  font-size: 15px;
+  font-weight: normal;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #233339;
+  transition: all 0.2s ease;
+}
+
+.menu ul li:hover {
+  background-color: transparent;
+  padding-left: 20px;
+  border-left: 3px solid red;
+}
+
+nav ul li:hover .side_icons {
+  color: red;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover span {
+  font-weight: 600;
+  color: #233339;
+  transition: color 0.3s ease;
+}
+
+.menu-label {
+  font-size: 14px;
+  color: #233339;
+  font-weight: 600;
+  margin: 15px 5px;
+}
+
+.side_icons {
+  size: 20px;
+  color: #233339;
+}
+
+.my_menu-list:hover {
+  color: #ff4747;
+}
+
+.badge {
+  background: #e4e7f5;
+  padding: 45px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.badge .icon {
+  font-size: 24px;
+}
+
+.badge p {
+  color: #273136;
+  font-size: 15px;
+  background: #e4e7f5;
+}
+
+.badge_icon {
+  position: absolute;
+  top: -25px;
+  left: 100px;
+  display: flex;
+  background-color: #819198;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.badge_button {
+  margin-top: 10px;
+  background: #819198;
+  color: #fff;
+  border: none;
+  padding: 13px 17px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.badge_button:hover {
+  background: #424e54ea;
+  transition: all 0.3s ease;
+}
