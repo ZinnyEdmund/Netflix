@@ -45,7 +45,7 @@ const Dsign: React.FC = () => {
     console.log("AUTH:", auth); // ← place this before signInWithEmailAndPassword
 
     console.log("Logged in:", userCredential.user);
-    navigate("/Mydashboard"); // or wherever your dashboard/homepage is
+    navigate("/Mydashboard"); // Will direct the user to the dashboard after successful login
   } catch (error: unknown) {
     if (error instanceof Error) {
       console.error("Login failed:", error.message);

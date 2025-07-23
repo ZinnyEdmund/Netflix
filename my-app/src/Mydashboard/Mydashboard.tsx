@@ -5,7 +5,7 @@ import Topbar from "../Dashboard/Topbar/Topbar";
 
 function Mydashboard() {
   return (
-    <div>
+    <div className="dashboardBg">
         <Sidebar />
         <Topbar />
     </div>

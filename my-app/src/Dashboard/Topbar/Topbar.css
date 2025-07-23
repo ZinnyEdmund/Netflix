@@ -1,8 +1,74 @@
 .topbar {
-  margin-left: 240px; 
+  margin-left: 280px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
+  padding: 10px 30px;
+}
+
+.Topbar_content {
   display: flex;
-  z-index: 1;
-  padding: 0 40px;
-  color: #555;
-  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar_left {
+  display: flex;
+  padding: 8px 18px;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #131720;
+  border-radius: 15px;
+}
+
+.topbar_left span {
+  color: #131720;
+}
+
+.topbar_left span:hover {
+  color: #36476e;
+}
+
+.Topbar_input {
+  border-radius: 20px;
+  outline: none;
+  border: transparent;
+  /* width: 200px; */
+  transition: all 0.3s ease;
+}
+
+.Topbar_input::placeholder {
+  color: #131720;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.Topbar_input:focus {
+  border-color: #007bff;
+  width: 250px;
+}
+
+.topbar_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar_right span {
+  font-size: 20px;
+  cursor: pointer;
+  color: #131720;
+  transition: color 0.2s ease;
+}
+
+.topbar_right span:hover {
+  color: #36476e;
+}
+
+.topbar_right img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }

@@ -2,13 +2,12 @@
 .sidebar {
   width: 240px;
   height: 100vh;
-  background: #fff;
   position: fixed;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid #000000;
+  border-right: 1px solid #131720;
 }
 
 .my_logo {

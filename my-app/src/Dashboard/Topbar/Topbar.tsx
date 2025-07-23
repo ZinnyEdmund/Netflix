@@ -1,11 +1,14 @@
 import "./Topbar.css";
 import { CiSearch } from "react-icons/ci";
-import { RiMic2Fill } from "react-icons/ri";
+import { BsMic } from "react-icons/bs";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { TiMessage } from "react-icons/ti";import Zee from '../../Images/Zee.png'
 
 const Topbar = () => {
   return (
-    <div className="topbar">
-      <div>
+    <section className="topbar">
+      <div className="Topbar_content">
+        <div className="topbar_left">
         <span>
           {" "}
           <CiSearch />
@@ -13,10 +16,19 @@ const Topbar = () => {
         <input type="text" placeholder="Search..." className="Topbar_input" />
         <span>
           {" "}
-          <RiMic2Fill />
+          <BsMic />
         </span>
       </div>
-    </div>
+
+      <div className="topbar_right">
+        <span><IoMdNotificationsOutline /></span>
+        <span><TiMessage /> </span>
+        <div>
+          <img src={Zee} alt="avatar" />
+        </div>
+      </div>
+      </div>
+    </section>
   );
 };
 
