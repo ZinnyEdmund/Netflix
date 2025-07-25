@@ -1,8 +1,11 @@
 .topbar {
-  margin-left: 280px;
+  color: #131720;
+  /* margin-left: 280px; */
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   z-index: 1000;
-  padding: 10px 30px;
+  padding: 15px 30px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .Topbar_content {
@@ -30,8 +33,10 @@
 
 .Topbar_input {
   border-radius: 20px;
+  caret-color: black;
   outline: none;
   border: transparent;
+  background-color: transparent;
   /* width: 200px; */
   transition: all 0.3s ease;
 }
@@ -52,16 +57,25 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
-.topbar_right span {
+.topbar_spanie {
+  position: absolute;
+  color: red;
+  background-color: red;
+  top: 20px;
+}
+
+.topbar_right p {
+  position: relative;
   font-size: 20px;
   cursor: pointer;
   color: #131720;
   transition: color 0.2s ease;
 }
 
-.topbar_right span:hover {
+.topbar_right p:hover {
   color: #36476e;
 }
 
@@ -72,3 +86,18 @@
   object-fit: cover;
   cursor: pointer;
 }
+
+.topbar_user h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #131720;
+}
+
+.topbar_user p {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* @media screen and (max-width: 378px) {
+
+} */

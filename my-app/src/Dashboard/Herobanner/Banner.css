@@ -1,0 +1,125 @@
+.banner_section {
+  background-image: url(../../Images/Thewitcher.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 85%;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 40px;
+}
+
+.banner_content {
+  display: flex;
+  gap: 7px;
+  color: #ffffffe2;
+  margin-bottom: 40px;
+  align-self: center;
+  /* padding: 20px; */
+}
+
+.banner_h1 {
+  background-color: #14141490;
+  padding: 5px 8px;
+  border-radius: 15px;
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.banner_content p {
+  padding: 7px;
+  font-size: 13px;
+}
+
+.banner_content_images {
+  display: flex;
+  align-self: center;
+}
+
+.banner_content_images img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: -10px;
+}
+
+.banner_titles {
+  margin-top: 120px;
+}
+
+.banner_titles h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.banner_titles_info {
+  display: flex;
+  font-size: 15px;
+  gap: 15px;
+  align-self: center;
+  margin: 20px 0;
+  color: #ffffffe2;
+}
+
+.banner_description {
+  width: 100%;
+  height: 40px;
+  transition: transform 0.15s ease-in-out, border 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+
+.banner_subimages {
+  display: flex;
+  gap: 20px;
+  height: 50px;
+}
+
+.banner_subimages img {
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.banner_subimages img:hover {
+  transform: scale(1.245);
+  /* padding: 15px; */
+  transition: all 0.3s ease;
+  border: 2px solid grey;
+  box-sizing: border-box;
+}
+
+.banner_subimages img:not(:hover) {
+  transition-delay: 0.1s;
+}
+
+.banner_description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.banner_buttons {
+  display: flex;
+  gap: 10px;
+  align-self: center;
+}
+
+.banner_btn1 {
+  border: none;
+  padding: 13px 23px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #e50914;
+}
+
+.banner_btn2 {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #3434344e;
+}

@@ -54,7 +54,7 @@ const Sidebar = () => {
 
       <div className="badge">
         <div className="badge_icon">
-          <GiPopcorn color="white" size={27} />
+          <GiPopcorn color="white" size={20} />
         </div>
         <p>Popcorn Addict</p>
         <button className="badge_button">View Challenges</button>
