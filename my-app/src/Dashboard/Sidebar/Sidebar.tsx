@@ -8,9 +8,9 @@ import { PiCompassFill } from "react-icons/pi";
 import { GiPopcorn } from "react-icons/gi";
 import { FaUser } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({ show }: { show: boolean }) => {
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${show ? "show" : "hide"}`}>
       <div className="my_logo">
         Netflix<span className="dot">.</span>
       </div>

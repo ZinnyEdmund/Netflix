@@ -1,4 +1,4 @@
-import DashboardLayout from "../Dashboard/Layout";
+import DashboardLayout from "../Dashboard/Dashlayout/Layout";
 import Topbar from "../Dashboard/Topbar/Topbar";
 import Banner from "../Dashboard/Herobanner/Banner";
 import Partiesrow from "../Dashboard/Partiesrow/Partiesrow";

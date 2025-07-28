@@ -1,5 +1,6 @@
+import './Partiesrow.css'
 
-function Partiesrow() {
+const Partiesrow = () => {
   return (
     <div>
 
