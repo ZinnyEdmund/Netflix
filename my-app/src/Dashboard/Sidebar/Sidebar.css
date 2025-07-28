@@ -3,7 +3,7 @@
   /* width: 240px; */
   height: 96vh;
   position: fixed;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   z-index: 999;
@@ -82,14 +82,26 @@ nav ul li:hover span {
   color: #ff4747;
 }
 
+/* Badge Box */
 .badge {
+  width: 90%;
   background: #e4e7f5;
   padding: 30px;
-  align-content: center;
   border-radius: 12px;
   text-align: center;
   position: relative;
-  /* margin-bottom: 20px; */
+  margin: 20px auto 10px auto; /* Centers badge horizontally */
+  box-sizing: border-box;
+}
+
+.badge_icon {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #819198;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .badge .icon {
@@ -99,17 +111,7 @@ nav ul li:hover span {
 .badge p {
   color: #273136;
   font-size: 15px;
-  background: #e4e7f5;
-}
-
-.badge_icon {
-  position: absolute;
-  top: -25px;
-  left: 70px;
-  display: flex;
-  background-color: #819198;
-  padding: 10px 10px;
-  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .badge_button {
@@ -143,16 +145,11 @@ nav ul li:hover span {
 
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
+.sidebar {
     width: 220px;
+    height: 100vh;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
-    background-color: #fff;
-    z-index: 999;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -163,9 +160,14 @@ nav ul li:hover span {
   .sidebar.hide {
     transform: translateX(-100%);
   }
-  
+
   .hamburger {
     display: block;
+  }
+
+  .badge {
+    width: 90%;
+    margin: 20px auto;
   }
 }
 

@@ -6,12 +6,14 @@ import Watching from "../Dashboard/Continuewatching/Watching";
 
 function Mydashboard() {
   return (
-    <DashboardLayout>
+   <div className="dashboardBg ">
+     <DashboardLayout>
       <Topbar />
       <Banner />
       <Partiesrow />
       <Watching />
     </DashboardLayout>
+   </div>
   );
 }
 
