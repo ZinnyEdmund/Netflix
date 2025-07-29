@@ -96,6 +96,71 @@
   color: #6c757d;
 }
 
-/* @media screen and (max-width: 378px) {
+@media screen and (max-width: 768px) {
+.topbar {
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+}
 
-} */
+  .Topbar_content {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topbar_left {
+    /* width: 100%; */
+    justify-content: space-between;
+    padding: 8px 10px;
+  }
+
+  .Topbar_input {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .topbar_right {
+    /* justify-content: space-between;
+    width: 80%;
+    gap: 10px;
+    flex-wrap: wrap; */
+    display: none;
+  }
+
+  .topbar_right p,
+  .topbar_user h4,
+  .topbar_user p {
+    font-size: 13px;
+  }
+
+  .topbar_user {
+    display: none; /* hide user info on small screen */
+  }
+
+  .topbar_right img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Topbar_input {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .topbar_left span {
+    font-size: 13px;
+  }
+
+  .topbar_right p {
+    font-size: 16px;
+  }
+
+  .topbar_user {
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@
   /* width: 240px; */
   height: 96vh;
   position: fixed;
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   z-index: 999;

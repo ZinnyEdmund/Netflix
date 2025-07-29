@@ -158,23 +158,42 @@
 }
 
 @media (max-width: 480px) {
-  .banner_section {
-    padding: 20px;
+    .banner_section {
+    padding: 15px;
+    margin: 15px auto;
     border-radius: 15px;
   }
 
-  .banner_titles h1 {
-    font-size: 1.5rem;
+.banner_titles h1 {
+    font-size: 1.4rem;
   }
 
-  .banner_btn1,
-  .banner_btn2 {
-    padding: 10px;
-    font-size: 0.85rem;
+  .banner_titles_info {
+    font-size: 13px;
+    gap: 10px;
   }
 
   .banner_subimages img {
     width: 60px;
     height: 45px;
+  }
+
+  /* .banner_content_images img {
+    width: 18px;
+    height: 18px;
+  } */
+
+  .banner_btn1,
+  .banner_btn2 {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .banner_description {
+    gap: 15px;
+  }
+
+  .banner_h1 {
+    font-size: 12px;
   }
 }
