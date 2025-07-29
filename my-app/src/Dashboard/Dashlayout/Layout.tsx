@@ -1,4 +1,4 @@
-import './layout.css'
+import "./layout.css";
 import { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import Avatar from "../Avatarsidebar/Avatar";
@@ -9,13 +9,15 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      {/* Hamburger Icon for Mobile */}
-      <button
-        onClick={() => setShowSidebar(!showSidebar)}
-        className="hamburger"
-      >
-        {showSidebar ? <FaTimes size={24} /> : <FaBars size={24} />}
-      </button>
+      <div className="hamburger-container">
+        {/* Hamburger Icon for Mobile */}
+        <button
+          onClick={() => setShowSidebar(!showSidebar)}
+          className="hamburger"
+        >
+          {showSidebar ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
+      </div>
 
       <div className="dashboard-layout">
         {/* LEFT SIDEBAR */}
@@ -24,9 +26,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         </div>
 
         {/* CENTER HERO CONTENT */}
-        <div className="main-content">
-          {children}
-        </div>
+        <div className="main-content">{children}</div>
 
         {/* RIGHT AVATAR */}
         <div className="avatar">

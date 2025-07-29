@@ -43,17 +43,24 @@
 }
 
 /* HAMBURGER */
+.hamburger-container {
+  position: relative;
+  padding: 0;
+}
+
 .hamburger {
   display: none;
-  position: fixed;
-  top: 10px;
-  left: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   z-index: 1000;
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 28px;
 }
+
+
 
 /* ========== RESPONSIVE BREAKPOINTS ========== */
 
@@ -107,4 +114,7 @@
     z-index: 999;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   }
+    .hamburger {
+      display: block;
+    }
 }
