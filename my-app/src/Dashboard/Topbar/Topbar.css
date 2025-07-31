@@ -106,9 +106,11 @@
 
   .Topbar_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 30px;
   align-items: center;
-  width: 100%;
+  align-self: center;
+  width: 90%;
   }
 
 .topbar_left {
