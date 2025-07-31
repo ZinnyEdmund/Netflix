@@ -129,20 +129,6 @@ nav ul li:hover span {
   transition: all 0.3s ease;
 }
 
-/* Hamburger button */
-.hamburger {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background: none;
-  border: none;
-  z-index: 999;
-  font-size: 24px;
-  color: #233339;
-  cursor: pointer;
-}
-
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
 .sidebar {
