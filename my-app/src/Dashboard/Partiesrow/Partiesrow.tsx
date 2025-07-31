@@ -1,11 +1,80 @@
-import './Partiesrow.css'
+import "./Partiesrow.css";
+import icons from "../../Images/Avatar.png";
 
 const Partiesrow = () => {
   return (
-    <div>
+    <div className="partiesrow">
+      <div>
+        <h1>Parties</h1>
+      </div>
 
+      <div className="The_partiesroww">
+        <div className="partiessrow_container">
+          <div className="partiesrow_img_content">
+            <img src={icons} alt="icons" className="first_icon" />
+            <div className="de_icons">
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+            </div>
+          </div>
+
+          <div className="partiesrow_text">
+            <h2>Cadaver</h2>
+            <p>Horro Marathon</p>
+          </div>
+        </div>
+
+        <div className="partiessrow_container">
+          <div className="partiesrow_img_content">
+            <img src={icons} alt="icons" className="first_icon" />
+            <div className="de_icons">
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+            </div>
+          </div>
+
+          <div className="partiesrow_text">
+            <h2>Cadaver</h2>
+            <p>Horro Marathon</p>
+          </div>
+        </div>
+
+        <div className="partiessrow_container">
+          <div className="partiesrow_img_content">
+            <img src={icons} alt="icons" className="first_icon" />
+            <div className="de_icons">
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+            </div>
+          </div>
+
+          <div className="partiesrow_text">
+            <h2>Cadaver</h2>
+            <p>Horro Marathon</p>
+          </div>
+        </div>
+
+        <div className="partiessrow_container">
+          <div className="partiesrow_img_content">
+            <img src={icons} alt="icons" className="first_icon" />
+            <div className="de_icons">
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+              <img src={icons} alt="icons" />
+            </div>
+          </div>
+
+          <div className="partiesrow_text">
+            <h2>Cadaver</h2>
+            <p>Horro Marathon</p>
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Partiesrow
+export default Partiesrow;

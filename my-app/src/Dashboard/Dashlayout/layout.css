@@ -35,7 +35,6 @@
 .main-content {
   flex: 1;
   margin-left: 200px;
-  /* margin-right: 120px; */
   padding: 20px;
   overflow-y: auto;
   box-sizing: border-box;
@@ -200,7 +199,10 @@
     padding: 16px;
   }
 
-  .sidebar,
+  .sidebar {
+    display: none;
+  }
+
   .avatar {
     display: none;
   }

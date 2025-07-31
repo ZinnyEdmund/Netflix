@@ -1,0 +1,70 @@
+.partiesrow {
+  color: black;
+  margin: 20px;
+}
+
+.The_partiesroww {
+  display: flex;
+  gap: 48px; 
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.partiessrow_container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 200px;
+  flex-shrink: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  transition: transform 0.2s ease;
+}
+
+.partiessrow_container:hover {
+  transform: translateY(-5px);
+}
+
+.partiesrow_img_content {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+  align-items: center;
+}
+
+.first_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.de_icons {
+  display: flex;
+}
+
+.de_icons img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: -8px;
+  border: 2px solid white;
+}
+
+.partiesrow_text {
+  margin-top: 15px;
+  /* text-align: center; */
+}
+
+.partiesrow_text h2 {
+  font-size: 16px;
+  color: #323232;
+  margin-bottom: 4px;
+}
+
+.partiesrow_text p {
+  font-size: 13px;
+  color: #777;
+}
