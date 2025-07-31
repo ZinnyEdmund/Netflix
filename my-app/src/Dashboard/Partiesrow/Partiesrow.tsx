@@ -36,8 +36,8 @@ const Partiesrow = () => {
           </div>
 
           <div className="partiesrow_text">
-            <h2>Cadaver</h2>
-            <p>Horro Marathon</p>
+            <h2>Bladerunner 2049</h2>
+            <p>Sci fi binge</p>
           </div>
         </div>
 
@@ -52,8 +52,8 @@ const Partiesrow = () => {
           </div>
 
           <div className="partiesrow_text">
-            <h2>Cadaver</h2>
-            <p>Horro Marathon</p>
+            <h2>Monsters inc.</h2>
+            <p>Don't make me grow up</p>
           </div>
         </div>
 
@@ -68,8 +68,8 @@ const Partiesrow = () => {
           </div>
 
           <div className="partiesrow_text">
-            <h2>Cadaver</h2>
-            <p>Horro Marathon</p>
+            <h2>Friends</h2>
+            <p>We were on a break!</p>
           </div>
         </div>
       </div>
