@@ -96,6 +96,57 @@
   color: #6c757d;
 }
 
+@media screen and (max-width: 1024px) {
+.topbar {
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+  .Topbar_content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  align-items: center;
+  align-self: center;
+  width: 86%;
+  }
+
+.topbar_left {
+  display: flex;
+  padding: 8px 18px;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #131720;
+  border-radius: 15px;
+}
+
+  .Topbar_input {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+.topbar_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+  .topbar_right p,
+  .topbar_user h4,
+  .topbar_user p {
+    font-size: 13px;
+  }
+
+  .topbar_right img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
 .topbar {
     z-index: 1000;
