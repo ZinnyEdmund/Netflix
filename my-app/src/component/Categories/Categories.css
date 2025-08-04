@@ -197,7 +197,8 @@ body {
 
 
 /* Responsiveness */
-@media screen and (min-width: 320px) {
+
+@media screen and (max-width: 320px) {
   .trending-header {
     padding-left: 10px;
   }
@@ -211,7 +212,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .trending-header {
     padding-left: 10px;
   }
@@ -237,7 +238,7 @@ body {
   }
 
   .slider-container {
-    width: fit-content;
+    width: 100%;
   }
 }
 
@@ -255,6 +256,6 @@ body {
   }
 
   .slider-container {
-    width: fit-content;
+    width: 100%;
   }
 }
