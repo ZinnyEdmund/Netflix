@@ -101,3 +101,65 @@ body {
     margin: 0 0 10px 0;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0;
+    margin-bottom: 100px;
+  }
+
+  .reenah {
+    /* margin-top: 70px;
+    margin-bottom: 0; */
+    margin: 40px auto;
+    width: 100%;
+  }
+
+  .container_content {
+    max-width: 700px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .container_header h2 {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-left: 150px;
+  }
+
+  .container_texts {
+    width: 100%; /* Take 90% of screen width */
+    max-width: 300px; /* But not more than 300px per box */
+    /* padding: 16px; */
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .container_texts p {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .container_texts h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+    .container_header h2 {
+    padding-left: 10px;
+    font-size: 2rem ;
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-left: 700px;
+  }
+  
+}

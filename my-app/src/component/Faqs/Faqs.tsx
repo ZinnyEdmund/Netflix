@@ -63,7 +63,7 @@ const FAQItem = ({
         <span className="Spaniie">
           {isOpen ? <LiaTimesSolid size={35} /> : <BsPlusLg size={35} />}
         </span>{" "}
-        {/* Show '-' if open, '+' if closed */}
+        {/* Show '*' if open, '+' if closed */}
       </div>
       {isOpen && <p className="faq-answer">{answer}</p>}{" "}
       {/* Conditionally render the answer if isOpen is true */}

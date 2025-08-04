@@ -238,7 +238,7 @@ body {
   }
 
   .slider-container {
-    width: 100%;
+    width: fit-content;
   }
 }
 
@@ -256,6 +256,6 @@ body {
   }
 
   .slider-container {
-    width: 100%;
+    width: fit-content;
   }
 }
