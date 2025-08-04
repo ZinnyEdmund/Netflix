@@ -211,7 +211,7 @@ body {
   }
 }
 
-@media screen and (max-width: 76px) {
+@media screen and (max-width: 768px) {
   .trending-header {
     padding-left: 10px;
   }

@@ -4,7 +4,7 @@ import icons from "../../Images/Avatar.png";
 const Partiesrow = () => {
   return (
     <div className="partiesrow">
-      <div>
+      <div className="partiesrow_header">
         <h1>Parties</h1>
       </div>
 

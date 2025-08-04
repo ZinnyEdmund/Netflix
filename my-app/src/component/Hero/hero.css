@@ -90,10 +90,6 @@
   border-radius: 5px;
   width: 350px;
   padding: 20px;
-  /* padding-top: 15px;
-    padding-right: 160px;
-    padding-bottom: 15px;
-    padding-left: 250px; */
 }
 
 .inputContent {
@@ -136,123 +132,125 @@
 }
 
 /* Responsiveness */
-@media screen and (max-width: 767px) {
+/* === Base styles (Mobile: 320px) === */
+@media screen and (min-width: 320px){
+.Main {
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header img {
+  height: 27px;
+  margin: 0;
+}
+
+.Text-center {
+  text-align: center;
+  width: 100%;
+  margin: 45px 0;
+}
+
+.Text-center h1 {
+  font-size: 28px;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.Text-center h3 {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.Text-center p {
+  font-size: 14px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.35;
+}
+
+.myie {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.inptBox {
+  width: 70%;
+  background-color: rgba(70, 69, 69, 0.256);
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 13px;
+}
+
+.Sctt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+
+.StartButton {
+  font-size: 16px;
+  padding: 13px 20px;
+}
+}
+
+/* === Tablet: 768px and up === */
+@media screen and (min-width: 768px) {
   .Main {
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .hero {
-    overflow: hidden;
-  }
-
-  .header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 40px;
-    max-width: 100%;
-    margin: 0;
-    flex-wrap: nowrap;
-  }
-
-  .header img {
-    height: 28px;
-  }
-
-  .Text-center {
-    margin: 0;
+    height: 500px;
   }
 
   .Text-center h1 {
-    font-size: 2rem;
-    font-weight: bolder;
-    padding: 0 50px 0 30px;
-    margin-bottom: 0px;
-  }
-
-  .Text-center h3 {
-    font-weight: normal;
-    margin-bottom: 18px;
-    font-size: 16px;
+    font-size: 36px;
+    width: 70%;
   }
 
   .Text-center p {
+    width: 60%;
     font-size: 16px;
-    font-weight: normal;
-    margin-bottom: 20px;
-    padding: 0 15px 0 15px;
-    line-height: 1.35;
-  }
-
-  .Text-center h1,
-  h3,
-  p {
-    margin: 20px;
   }
 
   .Sctt {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 25px;
-    /* width: 100%; */
+    gap: 10px;
   }
 
   .inptBox {
-    background-color: rgba(70, 69, 69, 0.256);
-    border: 1px solid grey;
-    border-radius: 5px;
-    width: 100%;
-    padding: 15px;
-    margin: 0 20px 18px 20px;
-    /* margin-bottom: 18px; */
+    width: 50%;
+  }
+}
+
+
+/* === Medium screens: 1024px and up === */
+@media screen and (min-width: 1024px) {
+  .Main {
+    height: 600px;
   }
 
-  .StartButton {
+  .Text-center h1 {
+    font-size: 40px;
+  }
+
+  .Text-center p {
+    width: 50%;
     font-size: 18px;
-    padding: 13px 20px;
-    /* width: 65%; */
-    /* margin-bottom: 25px; */
+  }
+
+  .inptBox {
+    width: 45%;
   }
 }
 
-@media screen and (max-width: 378px) {
-  .Text-center {
-    text-align: center;
-    width: 100%;
-  }
-
-  .myie {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .Text-center {
-    text-align: center;
-    width: 100%;
-  }
-
-  .myie {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .Text-center {
-    text-align: center;
-    width: 100%;
-  }
-
-  .myie {
-    width: 100%;
-    margin: 0;
-  }
-}

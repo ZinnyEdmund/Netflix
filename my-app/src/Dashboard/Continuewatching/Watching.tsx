@@ -35,7 +35,6 @@ const PopularMovies = () => {
               <img
                 src={`${TMDB_IMAGE_URL}${movie.poster_path}`}
                 alt={movie.title}
-                style={{ width: "200px" }}
               />
               <h3>{movie.title}</h3>
               {/* <p>{movie.overview.slice(0, 50)}</p> */}

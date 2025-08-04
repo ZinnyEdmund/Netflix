@@ -69,9 +69,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* .partiesrow {
-
-  } */
 
 .The_partiesroww {
   display: flex;
@@ -104,4 +101,10 @@
   justify-content: space-between;
   align-items: center;
 }
+}
+
+@media screen and (max-width: 320px) {
+  .partiesrow_header {
+    font-size: 12px;
+  }
 }
