@@ -22,7 +22,7 @@ const PopularMovies = () => {
   }, []);
 
   return (
-    <section>
+    <section className="watching_cont">
       <div className="De_movieheader">
         <h1>Continue watching</h1>
       </div>

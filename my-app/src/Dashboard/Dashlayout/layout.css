@@ -31,38 +31,34 @@
   z-index: 998;
 }
 
-/* HERO / MAIN CONTENT */
+/* MAIN CONTENT */
 .main-content {
   flex: 1;
-  margin-left: 200px;
+  margin-left: 210px;
+  margin-right: 110px;
   padding: 20px;
   overflow-y: auto;
   box-sizing: border-box;
   transition: margin 0.3s ease;
 }
 
-/* HAMBURGER */
+/* HAMBURGER (default hidden on desktop) */
 .hamburger-container {
-  position: relative;
-  padding: 0;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  display: none;
 }
 
 .hamburger {
-  display: none;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 28px;
 }
 
-
-
-/* ========== RESPONSIVE BREAKPOINTS ========== */
-
+/* ====== TABLETS (<=1024px) ====== */
 @media screen and (max-width: 1024px) {
   .sidebar {
     transform: translateX(-100%);
@@ -72,43 +68,27 @@
     transform: translateX(0);
   }
 
-  /* .avatar {
-    z-index: 1000;
+  .avatar {
     display: none;
-  } */
+  }
 
   .main-content {
     margin-left: 0;
     margin-right: 0;
   }
 
-    .hamburger-container {
-    position: relative;
-    padding: 0;
-    display: none;
-  }
-
-  .hamburger {
-    display: none;
+  .hamburger-container {
+    display: block;
   }
 }
 
-/* 📱 Phones (<=768px) */
+/* ====== PHONES (<=768px) ====== */
 @media screen and (max-width: 768px) {
   .dashboard-layout {
     flex-direction: column;
     height: auto;
   }
 
-  .main-content {
-    padding: 16px;
-  }
-
-  .sidebar,
-  .avatar {
-    display: none;
-  }
-
   .sidebar.show {
     display: flex;
     flex-direction: column;
@@ -117,124 +97,25 @@
     left: 0;
     height: 100vh;
     width: 220px;
-    z-index: 999;
+    background-color: #fff;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-  }
-  .hamburger-container {
-    position: relative;
-    padding: 0;
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    width: fit-content;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 28px;
   }
 }
 
-
+/* ====== SMALL PHONES (<=425px) ====== */
 @media screen and (max-width: 425px) {
-  .dashboard-layout {
-    flex-direction: column;
-    height: auto;
-  }
-
   .main-content {
     padding: 16px;
-  }
-
-  .sidebar,
-  .avatar {
-    display: none;
-  }
-
-  .sidebar.show {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 220px;
-    z-index: 999;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .hamburger-container {
-    position: relative;
-    padding: 0;
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
-    width: fit-content;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 28px;
   }
 }
 
-
+/* ====== EXTRA SMALL PHONES (<=320px) ====== */
 @media screen and (max-width: 320px) {
-  .dashboard-layout {
-    flex-direction: column;
-    height: auto;
-  }
-
   .main-content {
-    padding: 16px;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .avatar {
-    display: none;
+    padding: 12px;
   }
 
   .sidebar.show {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 220px;
-    z-index: 999;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .hamburger-container {
-    position: relative;
-    padding: 0;
-    display: block;
-  }
-
-  .hamburger {
-    display: block;
-    width: fit-content;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 28px;
+    width: 200px;
   }
 }
