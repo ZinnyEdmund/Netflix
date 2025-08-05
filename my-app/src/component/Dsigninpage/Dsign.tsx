@@ -42,7 +42,7 @@ const Dsign: React.FC = () => {
   try {
     const auth = getAuth(app);
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
-    console.log("AUTH:", auth); // ← place this before signInWithEmailAndPassword
+    console.log("AUTH:", auth); 
 
     console.log("Logged in:", userCredential.user);
     navigate("/Mydashboard"); // Will direct the user to the dashboard after successful login
