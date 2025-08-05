@@ -9,9 +9,9 @@ export const fetchPopularMovies = async () => {
     return response.data.results;
   } catch (error) {
      if (error instanceof Error) {
-      console.error("❌ Error fetching popular movies:", error.message);
+      console.error("Error fetching popular movies:", error.message);
     } else {
-      console.error("❌ Error fetching popular movies:", error);
+      console.error("Error fetching popular movies:", error);
     }
     return [];
   }

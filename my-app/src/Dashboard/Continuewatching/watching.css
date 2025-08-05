@@ -109,7 +109,7 @@
 @media screen and (min-width: 1024px) {
 .watching_cont {
     margin: 15px auto;
-    width: 85%;
+    width: fit-content;
 }
 
   .movies-container {
