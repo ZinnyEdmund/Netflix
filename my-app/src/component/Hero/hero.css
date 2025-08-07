@@ -30,21 +30,28 @@
   height: 45px; /* Adjust if needed */
 }
 
-.header button {
+.header button,
+.signin-button {
   color: #fff;
   background-color: #e50914;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  /* transition: background-color 0.3s ease; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-.header button:hover {
-  background-color: #c2131b;
+.header button:hover,
+.signin-button:hover {
+  background-color: #f40612;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.header button:not(:hover) {
-  transition-delay: 0.2s;
+.signin-button:focus {
+  outline: 2px solid #e50914;
+  outline-offset: 2px;
 }
 
 .Text-center {
@@ -53,6 +60,18 @@
   color: #fff;
   margin-top: 80px;
   width: 100%;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 .myie {
@@ -81,6 +100,17 @@
 .Sctt {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Email input container */
+.email-input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
 }
 
 .inptBox {
@@ -89,6 +119,7 @@
   border-radius: 5px;
   width: 350px;
   padding: 20px;
+  transition: all 0.3s ease;
 }
 
 .inputContent {
@@ -96,14 +127,67 @@
   font-size: 16px;
   font-weight: 500;
   padding-left: 15px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
 }
 
-.inptBox::placeholder {
+/* Input validation styles */
+.inputContent.input-error {
+  border: 2px solid #e87c03;
+  box-shadow: 0 0 0 1px rgba(232, 124, 3, 0.3);
+}
+
+.inputContent.input-valid {
+  border: 2px solid #46d369;
+  box-shadow: 0 0 0 1px rgba(70, 211, 105, 0.3);
+}
+
+.inputContent:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.2);
+}
+
+.inputContent:disabled {
+  background-color: rgba(70, 69, 69, 0.5);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.inptBox::placeholder,
+.inputContent::placeholder {
   text-align: left;
   color: #b7b1b1;
   padding-left: 15px;
   font-size: 17px;
   font-weight: 300;
+}
+
+/* Error message */
+.error-message {
+  position: absolute;
+  bottom: -25px;
+  left: 15px;
+  color: #e87c03;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* Success checkmark */
+.success-message {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #46d369;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 10;
 }
 
 .StartButton {
@@ -114,17 +198,62 @@
   border-radius: 5px;
   padding: 15px 30px;
   margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.StartButton:hover {
-  background-color: #c2131b;
+.StartButton:not(:disabled):hover {
+  background-color: #f40612;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.StartButton:not(:hover) {
-  transition-delay: 0.2s;
+.StartButton:not(:disabled):active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.StartButton:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.StartButton.loading {
+  background-color: #e50914;
+  cursor: wait;
+}
+
+.StartButton:focus {
+  outline: 2px solid #e50914;
+  outline-offset: 2px;
+}
+
+/* Small loading spinner for button */
+.loading-spinner-small {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .span {
+  display: flex;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
@@ -184,6 +313,11 @@
     width: fit-content;
   }
 
+  .email-input-container {
+    width: 100%;
+    max-width: none;
+  }
+
   .inptBox {
     width: 70%;
     background-color: rgba(70, 69, 69, 0.256);
@@ -197,11 +331,21 @@
     flex-direction: column;
     align-items: center;
     margin: 25px;
+    gap: 15px;
   }
 
   .StartButton {
     font-size: 16px;
     padding: 13px 20px;
+    margin-left: 0;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .error-message {
+    bottom: -20px;
+    font-size: 12px;
+    left: 10px;
   }
 }
 
@@ -213,7 +357,7 @@
 
   .Text-center h1 {
     font-size: 36px;
-    width: 70%;
+    width: 50%;
   }
 
   .Text-center p {
@@ -225,10 +369,26 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    margin: 25px auto;
+  }
+
+  .email-input-container {
+    max-width: 400px;
   }
 
   .inptBox {
-    width: 50%;
+    width: 100%;
+  }
+
+  .StartButton {
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .error-message {
+    bottom: -25px;
+    font-size: 13px;
+    left: 15px;
   }
 }
 
@@ -251,7 +411,34 @@
     font-size: 20px;
   }
 
+  .email-input-container {
+    max-width: 450px;
+  }
+
   .inptBox {
-    width: 45%;
+    width: 100%;
+  }
+}
+
+/* === Large screens: 1440px and up === */
+@media screen and (min-width: 1440px) {
+  .Main {
+    height: 95vh;
+  }
+
+  .Text-center {
+    margin-top: 80px;
+  }
+
+  .Text-center h1 {
+    font-size: 5rem;
+  }
+
+  .email-input-container {
+    max-width: 400px;
+  }
+
+  .inptBox {
+    width: 350px;
   }
 }
