@@ -63,7 +63,7 @@ const Dsignup = () => {
       setLoadingMessage("");
 
      if (error instanceof Error) {
-        // Handle specific Firebase errors
+        // Handles specific Firebase errors
         const errorMessage = error.message;
         if (errorMessage.includes("email-already-in-use")) {
           alert("This email is already registered. Please use a different email or sign in.");

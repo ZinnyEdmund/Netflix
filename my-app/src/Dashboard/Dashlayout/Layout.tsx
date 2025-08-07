@@ -7,6 +7,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const [showSidebar, setShowSidebar] = useState(false);
 
+  
+
   return (
     <>
       <div className="hamburger-container">
