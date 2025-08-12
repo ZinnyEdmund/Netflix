@@ -1,4 +1,4 @@
-import "./watching.css";
+import './watching.css'
 import { useEffect, useState } from "react";
 import { fetchPopularMovies } from "../../Tmdb";
 

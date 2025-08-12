@@ -3,7 +3,7 @@ import { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import auth from "../../firebaseConfig"; // adjust if needed
 import { useNavigate } from "react-router-dom";
-import Logo from "../../Images/Logo.png";
+import Logo from '../../Images/Logo.png';
 
 const Dsignup = () => {
   const [username, setUsername] = useState("");
