@@ -145,6 +145,31 @@ nav ul li:hover span {
 }
 
 /* Tablet and Mobile */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 240px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .sidebar.hide {
+    transform: translateX(-100%);
+  }
+
+  .badge {
+    width: 85%;
+    padding: 20px;
+    margin: 15px auto;
+  }
+}
+
 @media (max-width: 768px) {
   .sidebar {
     width: 240px;

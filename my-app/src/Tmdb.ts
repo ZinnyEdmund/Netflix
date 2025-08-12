@@ -8,7 +8,7 @@ export const fetchPopularMovies = async () => {
     const response = await axios.get(`${BASE_URL}/movie/popular?api_key=${API_KEY}`);
     return response.data.results || [];
   } catch (error) {
-      if (error instanceof Error) {
+    if (error instanceof Error) {
       console.error("Error fetching popular movies:", error.message);
     } else {
       console.error("Error fetching popular movies:", error);
@@ -17,6 +17,33 @@ export const fetchPopularMovies = async () => {
   }
 };
 
+// New function to get movie trailers
+export const fetchMovieTrailer = async (movieId: string) => {
+  try {
+    const response = await axios.get(`${BASE_URL}/movie/${movieId}/videos?api_key=${API_KEY}`);
+    const videos = response.data.results || [];
+
+    // Define a type for the video object
+    type Video = {
+      id: string;
+      key: string;
+      name: string;
+      site: string;
+      type: string;
+      [key: string]: unknown;
+    };
+
+    // Find the first YouTube trailer
+    const trailer = (videos as Video[]).find((video: Video) =>
+      video.type === 'Trailer' && video.site === 'YouTube'
+    );
+
+    return trailer ? `https://www.youtube.com/watch?v=${trailer.key}` : null;
+  } catch (error) {
+    console.error("Error fetching movie trailer:", error);
+    return null;
+  }
+};
 
 // import axios from 'axios';
 
